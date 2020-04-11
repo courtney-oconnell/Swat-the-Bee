@@ -27,8 +27,8 @@ function setup() {
       clouds[i].display();
     }
 
-    bee.position.x = 0;
-    bee.position.y = 0;
+    bee.position.x = mouseX;
+    bee.position.y = mouseY;
 
     drawSprites();
 }
