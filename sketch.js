@@ -1,5 +1,6 @@
 var clouds = [];
 var beeImg; 
+var bee;
 
 function preload() {
   beeImg = loadImage('bees/Bee_1.png');
@@ -11,6 +12,9 @@ function setup() {
   for (var i = 0; i < 20; i++) {
     clouds[i] = new cloud(); 
   }
+
+  bee = createSprite(width/2, height/2);
+  bee.addImage(beeImg);
 }
 
  function draw() {
@@ -22,6 +26,11 @@ function setup() {
       clouds[i].move();
       clouds[i].display();
     }
+
+    bee.position.x = 0;
+    bee.position.y = 0;
+
+    drawSprites();
 }
 
 function backs() {
