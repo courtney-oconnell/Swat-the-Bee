@@ -30,7 +30,7 @@ function setup() {
     }
 
     drawSprites();
-    bee.play();
+    //bee.play();
 }
 
 function backs() {
