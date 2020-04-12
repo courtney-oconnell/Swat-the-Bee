@@ -16,7 +16,7 @@ function setup() {
 
   randomPos();
 
-  bee = createSprite(xPos, yPos);
+  bee = createSprite(random(-windowWidth, windowWidth), random(-windowHeight, windowHeight));
   bee.addAnimation("fly", beeAnim);
   beeAnim.play();
 }
@@ -72,8 +72,8 @@ function cloud(){
 }
 
 function randomPos(){
-  xPos = random(0, windowWidth);
-  yPos = random(0, windowHeight);
+  xPos = random(-windowWidth, windowWidth);
+  yPos = random(-windowHeight, windowHeight);
 }
 
 function windowResized() {
