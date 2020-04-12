@@ -4,7 +4,7 @@ var bee;
 var beeAnim;
 
 function preload() {
-  beeAnim = loadAnimation("bees/Bee_1b.png", "bees/Bee_2.png", "bees/Bee_3.png", "bees/Bee_4.png", "bees/Bee_5.png");
+  beeAnim = loadAnimation("bees/Bee_1b.png", "bees/Bee_2b.png", "bees/Bee_3b.png", "bees/Bee_4b.png", "bees/Bee_5b.png");
 }
 
 function setup() {
