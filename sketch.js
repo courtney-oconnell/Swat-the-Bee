@@ -4,7 +4,6 @@ var bee;
 var beeAnim;
 
 function preload() {
-  //beeImg = loadImage('bees/Bee_1.png');
   beeAnim = loadAnimation("bees/Bee_1.png", "bees/Bee_2.png", "bees/Bee_3.png", "bees/Bee_4.png", "bees/Bee_5.png");
 }
 
@@ -17,7 +16,7 @@ function setup() {
   bee = createSprite(windowWidth/2, windowHeight/2, .5, .5);
   bee.addAnimation("fly", beeAnim);
   changeAnimation("fly");
-  //bee.addImage(beeImg);
+  bee.scale(.5)
 }
 
  function draw() {
