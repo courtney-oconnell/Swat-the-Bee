@@ -28,7 +28,7 @@ function setup() {
     }
 
     drawSprites();
-    bee.play();
+    beeAnim.play();
 }
 
 function backs() {
