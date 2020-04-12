@@ -28,7 +28,8 @@ function setup() {
     }
 
     drawSprites();
-    changeAnimation("fly");
+    //changeAnimation("fly");
+    bee.play();
 }
 
 function backs() {
