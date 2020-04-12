@@ -16,7 +16,7 @@ function setup() {
 
   randomPos();
 
-  bee = createSprite(random(0, width), random(0, height));
+  bee = createSprite(random(0, (windowWidth/2)), random(0, (windowHeight/2)));
   bee.addAnimation("fly", beeAnim);
   beeAnim.play();
 }
@@ -39,7 +39,8 @@ function backs() {
     fill('#87CEEB');
     noStroke();
     rect(0, 0, windowWidth, windowHeight);
-        //green grass
+    
+    //green grass
     fill('#2FC969')
     grassHeight =  windowHeight- (.5 * windowHeight);
     rect(0, 500, windowWidth, grassHeight);
