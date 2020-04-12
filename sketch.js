@@ -16,7 +16,7 @@ function setup() {
 
   randomPos();
 
-  bee = createSprite(random(0, windowWidth), random(0, windowHeight));
+  bee = createSprite(random(0, width), random(0, height));
   bee.addAnimation("fly", beeAnim);
   beeAnim.play();
 }
