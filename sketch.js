@@ -15,7 +15,6 @@ function setup() {
 
   bee = createSprite(windowWidth/2, windowHeight/2);
   bee.addAnimation("fly", beeAnim);
-  //changeAnimation("fly");
 }
 
  function draw() {
@@ -29,7 +28,7 @@ function setup() {
     }
 
     drawSprites();
-    bee.play();
+    changeAnimation("fly");
 }
 
 function backs() {
