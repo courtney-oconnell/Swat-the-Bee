@@ -1,9 +1,11 @@
 var clouds = [];
 var beeImg; 
 var bee;
+var beeAnim;
 
 function preload() {
-  beeImg = loadImage('bees/Bee_1.png');
+  //beeImg = loadImage('bees/Bee_1.png');
+  beeAnim = loadAnimation("bees/Bee_1.png", "bees/Bee_2.png", "bees/Bee_3.png", "bees/Bee_4.png", "bees/Bee_5.png");
 }
 
 function setup() {
@@ -13,7 +15,8 @@ function setup() {
   }
 
   bee = createSprite(windowWidth/2, windowHeight/2, .5, .5);
-  bee.addImage(beeImg);
+  bee.addAnimation("default", beeAnim);
+  //bee.addImage(beeImg);
 }
 
  function draw() {
