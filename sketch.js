@@ -13,10 +13,9 @@ function setup() {
     clouds[i] = new cloud(); 
   }
 
-  bee = createSprite(windowWidth/2, windowHeight/2, .5, .5);
+  bee = createSprite(windowWidth/2, windowHeight/2);
   bee.addAnimation("fly", beeAnim);
-  changeAnimation("fly");
-  bee.scale(.5)
+  //changeAnimation("fly");
 }
 
  function draw() {
@@ -29,6 +28,7 @@ function setup() {
     }
 
     drawSprites();
+    bee.play();
 }
 
 function backs() {
