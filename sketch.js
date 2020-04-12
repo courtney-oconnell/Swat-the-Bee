@@ -15,7 +15,7 @@ function setup() {
   }
 
   bee = createSprite(windowWidth/2, windowHeight/2, .5, .5);
-  bee.addAnimation("fly", beeAnim);
+  bee.addAnimation("default", beeAnim);
   //animation(fly, 500, 150);
   //bee.addImage(beeImg);
 }
