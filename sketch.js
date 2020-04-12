@@ -13,8 +13,7 @@ function setup() {
     clouds[i] = new cloud(); 
   }
 
-  bee = createSprite(windowWidth/2, windowHeight/2);
-  bee.scale(.5);
+  bee = createSprite(windowWidth/2, windowHeight/2, .5, .5);
   bee.addImage(beeImg);
 }
 
