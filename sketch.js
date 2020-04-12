@@ -4,7 +4,7 @@ var bee;
 var beeAnim;
 
 function preload() {
-  beeAnim = loadAnimation("bees/Bee_1.png", "bees/Bee_2.png", "bees/Bee_3.png", "bees/Bee_4.png", "bees/Bee_5.png");
+  beeAnim = loadAnimation("bees/Bee_1.1.png", "bees/Bee_2.png", "bees/Bee_3.png", "bees/Bee_4.png", "bees/Bee_5.png");
 }
 
 function setup() {
@@ -22,6 +22,7 @@ function setup() {
   background(255);
     
    backs(); 
+
     for (var i = 0; i < clouds.length; i++) {
       clouds[i].move();
       clouds[i].display();
