@@ -2,6 +2,7 @@ var clouds = [];
 var beeImg; 
 var bee;
 var beeAnim;
+var xPos, yPos;
 
 function preload() {
   beeAnim = loadAnimation("bees/Bee_1b.png", "bees/Bee_2b.png", "bees/Bee_3b.png", "bees/Bee_4b.png", "bees/Bee_5b.png");
@@ -66,6 +67,11 @@ function cloud(){
       this.x = 0;
     }
   }
+}
+
+function randomPos(){
+  xPos = random(0, windowWidth);
+  yPos = random(0, windowHeight);
 }
 
 function windowResized() {
