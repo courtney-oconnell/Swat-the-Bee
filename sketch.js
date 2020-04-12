@@ -27,9 +27,6 @@ function setup() {
       clouds[i].display();
     }
 
-    //bee.position.x = mouseX;
-    //bee.position.y = mouseY; 
-
     drawSprites();
 }
 
@@ -39,7 +36,7 @@ function backs() {
     noStroke();
     rect(0, 0, windowWidth, windowHeight);
 
-        //green grass
+    //green grass
     fill('#2FC969')
     grassHeight =  windowHeight- (.5 * windowHeight);
     rect(0, 500, windowWidth, grassHeight);
