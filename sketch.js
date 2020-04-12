@@ -9,7 +9,7 @@ function preload() {
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  for (var i = 0; i < 20; i++) {
+  for (var i = 0; i < 20; i++) { 
     clouds[i] = new cloud(); 
   }
 
