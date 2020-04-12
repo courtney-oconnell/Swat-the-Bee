@@ -8,11 +8,12 @@ function preload() {
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-
   for (var i = 0; i < 20; i++) {
     clouds[i] = new cloud(); 
   }
 
+  bee = createSprite(windowWidth/2, windowHeight/2);
+  bee.scale(.5);
   bee = createSprite(windowWidth/2, windowHeight/2, .5, .5);
   bee.addImage(beeImg);
 }
@@ -21,12 +22,13 @@ function setup() {
   background(255);
     
    backs(); 
-
     for (var i = 0; i < clouds.length; i++) {
       clouds[i].move();
       clouds[i].display();
     }
 
+    //bee.position.x = mouseX;
+    //bee.position.y = mouseY;
     drawSprites();
 }
 
@@ -35,8 +37,7 @@ function backs() {
     fill('#87CEEB');
     noStroke();
     rect(0, 0, windowWidth, windowHeight);
-
-    //green grass
+        //green grass
     fill('#2FC969')
     grassHeight =  windowHeight- (.5 * windowHeight);
     rect(0, 500, windowWidth, grassHeight);
