@@ -14,6 +14,8 @@ function setup() {
     clouds[i] = new cloud(); 
   }
 
+  randomPos();
+
   bee = createSprite(xPos, yPos);
   bee.addAnimation("fly", beeAnim);
   beeAnim.play();
