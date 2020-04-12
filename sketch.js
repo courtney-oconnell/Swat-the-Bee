@@ -28,8 +28,9 @@ function setup() {
     }
 
     bee.scale(0.3);
-    bee.position.x = mouseX;
-    bee.position.y = mouseY;
+    bee.position(300,300);
+    //bee.position.x = mouseX;
+    //bee.position.y = mouseY;
 
     drawSprites();
 }
