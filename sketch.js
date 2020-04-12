@@ -13,7 +13,8 @@ function setup() {
     clouds[i] = new cloud(); 
   }
 
-  bee = createSprite(width/2, height/2, 1, 1);
+  bee = createSprite(windowWidth/2, windowHeight/2);
+  bee.scale(.5);
   bee.addImage(beeImg);
 }
 
@@ -26,7 +27,7 @@ function setup() {
       clouds[i].move();
       clouds[i].display();
     }
-
+`
     //bee.position.x = mouseX;
     //bee.position.y = mouseY;
 
