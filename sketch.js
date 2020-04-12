@@ -28,6 +28,8 @@ function setup() {
     }
 
     drawSprites();
+    bee.height(10);
+    bee.width(10);
     bee.play();
 }
 
