@@ -82,6 +82,7 @@ function bug() {
   this.move = function() {
     bee.addAnimation("fly", beeAnim);
     beeAnim.play();
+    drawSprites();
   }
 }
 
