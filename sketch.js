@@ -30,7 +30,9 @@ function setup() {
       clouds[i].display();
     }
 
-    drawSprites();
+    for (var i = 0; i < beeArr.length; i++) {
+      bugs[i].display();
+    }
 }
 
 function backs() {
@@ -78,6 +80,7 @@ function bug() {
   bee = createSprite();
   bee.addAnimation("fly", beeAnim);
   beeAnim.play();
+  drawSprites();
   }
 }
 
