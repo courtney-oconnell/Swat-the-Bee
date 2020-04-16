@@ -27,6 +27,7 @@ function setup() {
     }
 
     for (var i = 0; i < 3; i++) {
+      beeArr[i].move();
       beeArr[i].display();
     }
 }
@@ -76,6 +77,13 @@ function bug() {
     beeAnim.play();
     bee.draw();
   }
+  this.move = function() {
+    this.x = this.x += 1 ;
+    this.y = this.y + random(-1, 1);
+    
+    if(this.x >= windowWidth){
+      this.x = 0;
+    }
 }
 
 function windowResized() {
