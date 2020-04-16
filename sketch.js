@@ -14,9 +14,11 @@ function setup() {
     clouds[i] = new cloud(); 
   }
 
-  bee = createSprite(random(10, (windowWidth-10)), random(10, (windowHeight-10)));
-  bee.addAnimation("fly", beeAnim);
-  beeAnim.play();
+  for(var i = 0; i < 3; i++) {
+     bee = createSprite(random(10, (windowWidth-10)), random(10, (windowHeight-10)));
+    bee.addAnimation("fly", beeAnim);
+    beeAnim.play();
+  }
 }
 
  function draw() {
