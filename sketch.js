@@ -14,8 +14,6 @@ function setup() {
   for (var i = 0; i < 20; i++) { 
     clouds[i] = new cloud(); 
   }
-
-
 }
 
  function draw() {
@@ -76,7 +74,7 @@ function bug() {
     bee = createSprite(random(10, (windowWidth-150)), random(10, (windowHeight-150)));
     bee.addAnimation("fly", beeAnim);
     beeAnim.play();
-    drawSprites();
+    bee.draw();
   }
 }
 
