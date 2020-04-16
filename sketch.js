@@ -78,7 +78,7 @@ function bug() {
   this.y =  random(10, (windowHeight-100));
 
   this.display = function() {
-    bee = createSprite();
+    bee = createSprite(this.x, this.y);
     bee.addAnimation("fly", beeAnim);
     beeAnim.play();
     drawSprites();
