@@ -31,8 +31,8 @@ function setup() {
     }
 
     for (var i = 0; i < beeArr.length; i++) {
-      beeArr[i].move();
-      beeArr[i].display();
+      beeArr[i].display()
+      beeArr[i].move();;
     }
 }
 
