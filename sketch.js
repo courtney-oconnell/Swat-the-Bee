@@ -75,7 +75,7 @@ function bug() {
     bee = createSprite(random(10, (windowWidth-150)), random(10, (windowHeight-150)));
     bee.addAnimation("fly", beeAnim);
     beeAnim.play();
-    bee.draw();
+    drawSprites();
   }
   this.move = function() {
     this.x = this.x += 1 ;
