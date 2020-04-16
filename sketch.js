@@ -2,7 +2,6 @@ var clouds = [];
 var beeImg; 
 var bee;
 var beeAnim;
-var beeArr = [];
 var xPos, yPos;
 
 function preload() {
@@ -15,12 +14,9 @@ function setup() {
     clouds[i] = new cloud(); 
   }
 
-  for (var i = 0; i < 3; i++) {
-      bee = createSprite(random(0, (windowWidth)), random(0, (windowHeight)));
-      bee.addAnimation("fly", beeAnim);
-      beeAnim.play();
-      beeArr[i] = bee;
-    }
+  bee = createSprite(random(10, (windowWidth-10)), random(10, (windowHeight-10)));
+  bee.addAnimation("fly", beeAnim);
+  beeAnim.play();
 }
 
  function draw() {
@@ -33,7 +29,7 @@ function setup() {
       clouds[i].display();
     }
 
-     drawSprites();
+    drawSprites();
 }
 
 function backs() {
