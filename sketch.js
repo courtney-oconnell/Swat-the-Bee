@@ -75,7 +75,7 @@ function cloud(){
 
 function bug() {
   this.display = function() {
-    bee = createSprite(random(100, (windowWidth-100)), random(100, (windowHeight-100)));
+    bee = createSprite(random(150, (windowWidth-50)), random(150, (windowHeight-100)));
     bee.addAnimation("fly", beeAnim);
     beeAnim.play();
     drawSprites();
