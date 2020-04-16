@@ -14,7 +14,7 @@ function setup() {
     clouds[i] = new cloud(); 
   }
 
-  bee = createSprite(random(10, (windowWidth-10)), random(10, (windowHeight-10)));
+  bee = createSprite(random(20, (windowWidth-10)), random(20, (windowHeight-10)));
   bee.addAnimation("fly", beeAnim);
   beeAnim.play();
 }
