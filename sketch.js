@@ -15,7 +15,7 @@ function setup() {
     clouds[i] = new cloud(); 
   }
 
-  for(var i = 0; i < 3; i++) {
+  for (var i = 0; i < 3; i++) {
      beeArr[i] = new bug();
   }
 }
@@ -31,7 +31,7 @@ function setup() {
     }
 
     for (var i = 0; i < beeArr.length; i++) {
-      bugs[i].display();
+      beeArr[i].display();
     }
 }
 
@@ -76,11 +76,12 @@ function cloud(){
 function bug() {
   this.x = random(10, (windowWidth-100));
   this.y =  random(10, (windowHeight-100));
+
   this.display = function() {
-  bee = createSprite();
-  bee.addAnimation("fly", beeAnim);
-  beeAnim.play();
-  drawSprites();
+    bee = createSprite();
+    bee.addAnimation("fly", beeAnim);
+    beeAnim.play();
+    drawSprites();
   }
 }
 
