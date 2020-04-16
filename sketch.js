@@ -30,7 +30,7 @@ function setup() {
       clouds[i].display();
     }
 
-    for (var i = 0; i < beeArr.length; i++) {
+    for (var i = 0; i < 3; i++) {
       beeArr[i].display();
     }
 }
