@@ -30,7 +30,7 @@ function setup() {
       clouds[i].display();
     }
 
-    for (var i = 0; i < 3; i++) {
+    for (var i = 0; i < beeArr.length; i++) {
       beeArr[i].move();
       beeArr[i].display();
     }
@@ -81,6 +81,7 @@ function bug() {
     beeAnim.play();
     drawSprites();
   }
+
   this.move = function() {
     this.x = this.x += 1 ;
     this.y = this.y + random(-1, 1);
