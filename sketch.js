@@ -29,9 +29,7 @@ function setup() {
       clouds[i].display();
     }
 
-    for (var i = 0; i < 3; i++) {
     drawSprites();
-  }
 }
 
 function backs() {
