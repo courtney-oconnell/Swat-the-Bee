@@ -15,9 +15,7 @@ function setup() {
     clouds[i] = new cloud(); 
   }
 
-  for (var i = 0; i < 3; i++) {
-     beeArr[i] = new bug();
-  }
+
 }
 
  function draw() {
