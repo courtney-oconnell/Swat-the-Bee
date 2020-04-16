@@ -15,7 +15,7 @@ function setup() {
   }
 
   for (var i = 0; i < 3; i++) {
-      bee = createSprite(random(0, (windowWidth-25)), random(0, (windowHeight-25)));
+      bee = createSprite(random(0, (windowWidth)), random(0, (windowHeight)));
       bee.addAnimation("fly", beeAnim);
       beeAnim.play();
     }
