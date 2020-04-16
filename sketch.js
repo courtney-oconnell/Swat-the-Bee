@@ -13,6 +13,12 @@ function setup() {
   for (var i = 0; i < 20; i++) { 
     clouds[i] = new cloud(); 
   }
+
+  for (var i = 0; i < 3; i++) {
+      bee = createSprite(random(150, (windowWidth-50)), random(150, (windowHeight-100)));
+      bee.addAnimation("fly", beeAnim);
+      beeAnim.play();
+    }
 }
 
  function draw() {
@@ -25,12 +31,7 @@ function setup() {
       clouds[i].display();
     }
 
-    for (var i = 0; i < 3; i++) {
-      bee = createSprite(random(150, (windowWidth-50)), random(150, (windowHeight-100)));
-      bee.addAnimation("fly", beeAnim);
-      beeAnim.play();
-      drawSprites();
-    }
+     drawSprites();
 }
 
 function backs() {
