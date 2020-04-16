@@ -32,7 +32,6 @@ function setup() {
 
     for (var i = 0; i < beeArr.length; i++) {
       beeArr[i].display();
-      beeArr[i].move();
     }
 }
 
@@ -77,12 +76,9 @@ function cloud(){
 function bug() {
   this.display = function() {
     bee = createSprite(random(10, (windowWidth-150)), random(10, (windowHeight-150)));
-    drawSprites();
-  }
-
-  this.move = function() {
     bee.addAnimation("fly", beeAnim);
     beeAnim.play();
+    drawSprites();
   }
 }
 
