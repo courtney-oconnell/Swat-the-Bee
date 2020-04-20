@@ -80,6 +80,7 @@ function cloud(){
       this.x = 0;
     }
   }
+}
 
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
