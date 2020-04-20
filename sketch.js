@@ -1,11 +1,3 @@
-var clouds = [];
- 
-var bee;
-var beeAnim;
-
-var bee1;
-var bee1;
-
 const video = document.getElementById("myvideo");
 const canvas = document.getElementById("canvas");
 const context = canvas.getContext("2d");
@@ -82,6 +74,13 @@ handTrack.load(modelParams).then(lmodel => {
   trackButton.disabled = false
 });
 
+var clouds = [];
+ 
+var bee;
+var beeAnim;
+
+var bee1;
+var bee1;
 
 function preload() {
   beeAnim = loadAnimation("bees/Bee_1b.png", "bees/Bee_2b.png", "bees/Bee_3b.png", "bees/Bee_4b.png", "bees/Bee_5b.png");
@@ -89,7 +88,7 @@ function preload() {
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  
+
   for (var i = 0; i < 20; i++) { 
     clouds[i] = new cloud(); 
   }
