@@ -21,7 +21,7 @@ const modelParams = {
 }
 
 // Load the model.
-handTrack.load(modelParams).then(lmodel => {
+handtrack.load(modelParams).then(lmodel => {
     // detect objects in the image.
     model = lmodel
     updateNote.innerText = "Loaded Model!"
@@ -29,7 +29,7 @@ handTrack.load(modelParams).then(lmodel => {
 });
 
 function startVideo() {
-    handTrack.startVideo(video).then(function (status) {
+    handtrack.startVideo(video).then(function (status) {
         console.log("video started", status);
         if (status) {
             updateNote.innerText = "Video started. Now tracking"
