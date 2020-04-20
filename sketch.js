@@ -7,6 +7,14 @@ let updateNote = document.getElementById("updatenote");
 let isVideo = false;
 let model = null;
 
+var clouds = [];
+ 
+var bee;
+var beeAnim;
+
+var bee1;
+var bee1;
+
 const modelParams = {
   flipHorizontal: true, // flip e.g for video  
   maxNumBoxes: 2, // maximum number of boxes to detect
@@ -74,13 +82,6 @@ handTrack.load(modelParams).then(lmodel => {
   trackButton.disabled = false
 });
 
-var clouds = [];
- 
-var bee;
-var beeAnim;
-
-var bee1;
-var bee1;
 
 function preload() {
   beeAnim = loadAnimation("bees/Bee_1b.png", "bees/Bee_2b.png", "bees/Bee_3b.png", "bees/Bee_4b.png", "bees/Bee_5b.png");
