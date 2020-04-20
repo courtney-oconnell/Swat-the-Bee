@@ -1,3 +1,9 @@
+var clouds = [];
+var bee;
+var beeAnim;
+var bee1;
+var bee1;
+
 const video = document.getElementById("myvideo");
 const canvas = document.getElementById("canvas");
 const context = canvas.getContext("2d");
@@ -6,14 +12,6 @@ let updateNote = document.getElementById("updatenote");
 
 let isVideo = false;
 let model = null;
-
-var clouds = [];
- 
-var bee;
-var beeAnim;
-
-var bee1;
-var bee1;
 
 const modelParams = {
   flipHorizontal: true, // flip e.g for video  
