@@ -81,7 +81,3 @@ function cloud(){
     }
   }
 }
-
-function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
-}
