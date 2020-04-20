@@ -10,3 +10,4 @@ canvas {
 /* hide video display */
 /*#canvas { display: none; }*/
 
+.videobox { display:none; }

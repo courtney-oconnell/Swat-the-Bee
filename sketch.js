@@ -20,16 +20,8 @@ const modelParams = {
     scoreThreshold: 0.6,    // confidence threshold for predictions.
 }
 
-// Load the model.
-handtrack.load(modelParams).then(lmodel => {
-    // detect objects in the image.
-    model = lmodel
-    updateNote.innerText = "Loaded Model!"
-    trackButton.disabled = false
-});
-
 function startVideo() {
-    handtrack.startVideo(video).then(function (status) {
+    handTrack.startVideo(video).then(function (status) {
         console.log("video started", status);
         if (status) {
             updateNote.innerText = "Video started. Now tracking"
@@ -53,8 +45,6 @@ function toggleVideo() {
     }
 }
 
-
-
 function runDetection() {
     model.detect(video).then(predictions => {
         console.log("Predictions: ", predictions);
@@ -65,6 +55,13 @@ function runDetection() {
     });
 }
 
+// Load the model.
+handTrack.load(modelParams).then(lmodel => {
+    // detect objects in the image.
+    model = lmodel
+    updateNote.innerText = "Loaded Model!"
+    trackButton.disabled = false
+});
 
 function preload() {
   beeAnim = loadAnimation("bees/Bee_1b.png", "bees/Bee_2b.png", "bees/Bee_3b.png", "bees/Bee_4b.png", "bees/Bee_5b.png");
