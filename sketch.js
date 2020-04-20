@@ -10,6 +10,7 @@ var beeAnim1;
 
 function preload() {
   beeAnim = loadAnimation("bees/Bee_1b.png", "bees/Bee_2b.png", "bees/Bee_3b.png", "bees/Bee_4b.png", "bees/Bee_5b.png");
+  beeAnim1 = loadAnimation("bees/Bee_1b.png", "bees/Bee_2b.png", "bees/Bee_3b.png", "bees/Bee_4b.png", "bees/Bee_5b.png");
 }
 
 function setup() {
@@ -23,8 +24,8 @@ function setup() {
   beeAnim.play();
 
   bee1 = createSprite(random(20, (windowWidth-10)), random(20, (windowHeight-10)));
-  bee1.addAnimation("fly", beeAnim1);
-  beeAnim1.play();
+  bee1.addAnimation("fly", beeAnim);
+  beeAnim.play();
 }
 
  function draw() {
