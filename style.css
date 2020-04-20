@@ -4,7 +4,7 @@ html, body {
 }
 
 canvas {
-  display: block;
+  display: inline;
 }
 
 /* hide video display */
