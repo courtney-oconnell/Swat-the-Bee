@@ -4,10 +4,9 @@ html, body {
 }
 
 canvas {
-  display: inline;
+  display: block;
 }
 
 /* hide video display */
 /*#canvas { display: none; }*/
 
-.videobox { display:none; }
