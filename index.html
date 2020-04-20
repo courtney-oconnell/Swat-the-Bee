@@ -11,6 +11,7 @@
       margin: 0;
     }
   </style>
+    <script src="p5.dom.min.js"></script>
   <script src="addons/p5.js"  type="text/javascript"></script>
   <script src="addons/p5.play.js" type="text/javascript"></script>
   <script src="addons/handtrack.min.js"  type="text/javascript"> </script>
@@ -20,15 +21,12 @@
 
 <body>
    <div class="mb10">
-    <button onclick="toggleVideo()" id="trackbutton" class="bx--btn bx--btn--secondary" type="button">
-      Toggle Video
-    </button>
-    <div id="updatenote" class="updatenote mt10"> loading model ..</div>
-  </div>
-  <video class="videobox canvasbox" autoplay="autoplay" id="myvideo"></video>
+        <button onclick="toggleVideo()" id="trackbutton" type="button">Toggle Video</button>
+        <div id="updatenote"> loading model...</div>
+    </div>
+    <video class="videobox canvasbox" autoplay="autoplay" id="myvideo"></video>
 
-  <img id="img" src="hand.jpg"/> 
-  <canvas id="canvas" class="border canvasbox"></canvas>
+    <canvas id="canvas" class="border canvasbox"></canvas>
     <script src="sketch.js"></script>
 </body>
 
