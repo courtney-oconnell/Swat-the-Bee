@@ -124,7 +124,7 @@ function setup() {
     drawSprites();
 
     fill("red");
-    rect(c, d, 10, 10);
+    rect(h1x, h1y, 10, 10);
 }
 
 function backs() {
