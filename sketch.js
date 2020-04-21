@@ -80,6 +80,7 @@ handTrack.load(modelParams).then(lmodel => {
   trackButton.disabled = false
 });
 
+let c,d; 
 
 function preload() {
   beeAnim = loadAnimation("bees/Bee_1b.png", "bees/Bee_2b.png", "bees/Bee_3b.png", "bees/Bee_4b.png", "bees/Bee_5b.png");
@@ -90,8 +91,8 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   //map(windowWidth, 0, 640, 0, windowWidth);
   //map(windowHeight, 0, 480, 0, windowHeight);
-  let c = map(h1x, 0, 640, 0, windowWidth);
-
+  c = map(h1x, 0, 640, 0, windowWidth);
+  d = map(h1y, 0, 480, 0, windowHeight);
 
   for (var i = 0; i < 20; i++) { 
     clouds[i] = new cloud(); 
@@ -123,7 +124,7 @@ function setup() {
     drawSprites();
 
     fill("red");
-    rect(c, h1y, 10, 10);
+    rect(c, d, 10, 10);
 }
 
 function backs() {
