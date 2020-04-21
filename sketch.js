@@ -84,7 +84,7 @@ handTrack.load(modelParams).then(lmodel => {
 
 function preload() {
   beeAnim = loadAnimation("bees/Bee_1b.png", "bees/Bee_2b.png", "bees/Bee_3b.png", "bees/Bee_4b.png", "bees/Bee_5b.png");
-  t = 0;
+  img = loadImage('hand.png');
 }
 
 function setup() {
@@ -105,6 +105,8 @@ function setup() {
   bee2 = createSprite(random(20, (windowWidth-10)), random(20, (windowHeight-10)));
   bee2.addAnimation("fly", beeAnim);
   beeAnim.play();
+
+  image(img, 0, 0);
 }
 
  function draw() {
