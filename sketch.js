@@ -107,7 +107,7 @@ function setup() {
   bee2.addAnimation("fly", beeAnim);
   beeAnim.play();
 
-  hand = createSprite(h1x, h1y);
+  hand = createSprite(400, 400);
   hand.addAnimation("static", handAnim);
 }
 
@@ -122,6 +122,9 @@ function setup() {
     }
 
     drawSprites();
+
+    fill("red");
+    rect(h1x, h1y, 10, 10);
 }
 
 function backs() {
