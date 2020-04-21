@@ -3,8 +3,6 @@ var bee;
 var beeAnim;
 var bee1;
 var bee1;
-var hand;
-var handAnim;
 
 const video = document.getElementById("myvideo");
 const canvas = document.getElementById("canvas");
@@ -107,9 +105,6 @@ function setup() {
   bee2 = createSprite(random(20, (windowWidth-20)), random(20, (windowHeight-20)));
   bee2.addAnimation("fly", beeAnim);
   beeAnim.play();
-
-  //hand = createSprite(400, 400);
-  //hand.addAnimation("static", handAnim);
 }
 
  function draw() {
