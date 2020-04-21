@@ -83,7 +83,6 @@ handTrack.load(modelParams).then(lmodel => {
 
 function preload() {
   beeAnim = loadAnimation("bees/Bee_1b.png", "bees/Bee_2b.png", "bees/Bee_3b.png", "bees/Bee_4b.png", "bees/Bee_5b.png");
-  //handAnim = loadAnimation("hand2.png");
 }
 
 function setup() {
