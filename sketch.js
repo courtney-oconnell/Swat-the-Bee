@@ -82,43 +82,6 @@ handTrack.load(modelParams).then(lmodel => {
 });
 
 
-    // process mouse move and touch events
-    function mouseMoveHandler(event) {
-        if (!pauseGame) {
-            mouseX = convertToRange(event.clientX, windowXRange, worldXRange);
-            if (!isNaN(mouseX)) {
-                lineaVeloctiy = Vec2((mouseX - paddle.getPosition().x) * accelFactor, 0)
-                paddle.setLinearVelocity(lineaVeloctiy)
-                // xdiff = mouseX - paddle.getPosition().x > 0 ? 100 : -100
-                // paddle.setPosition(Vec2(mouseX,0))
-            }
-        } else {
-
-        }
-    }
-
-    function addUI() {
-
-        // Add mouse movement listener to move paddle
-        // Add mouse movement listener to move paddle
-        $(document).bind('touchmove touchstart mousemove', function (e) {
-            e.preventDefault();
-            var touch
-            if (e.type == "touchmove") {
-                touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
-            } else if (e.type == "touchstart") {
-                touch = e.targetTouches[0]
-            } else if (e.type == "mousemove") {
-                touch = e
-            }
-            mouseMoveHandler(touch)
-        });
-
-        var ground = world.createBody();
-        var groundY = -(0.3 * SPACE_HEIGHT)
-        // ground.createFixture(pl.Edge(Vec2(-(0.95 * SPACE_WIDTH / 2), groundY), Vec2((0.95 * SPACE_WIDTH / 2), groundY)), 0.0);
-    }
-
 function preload() {
   beeAnim = loadAnimation("bees/Bee_1b.png", "bees/Bee_2b.png", "bees/Bee_3b.png", "bees/Bee_4b.png", "bees/Bee_5b.png");
   t = 0;
