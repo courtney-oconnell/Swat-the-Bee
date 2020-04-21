@@ -3,7 +3,8 @@ var bee;
 var beeAnim;
 var bee1;
 var bee1;
-var t;
+var hand;
+var handAnim;
 
 const video = document.getElementById("myvideo");
 const canvas = document.getElementById("canvas");
@@ -84,7 +85,7 @@ handTrack.load(modelParams).then(lmodel => {
 
 function preload() {
   beeAnim = loadAnimation("bees/Bee_1b.png", "bees/Bee_2b.png", "bees/Bee_3b.png", "bees/Bee_4b.png", "bees/Bee_5b.png");
-  img = loadImage('hand.png');
+  handAnim = loadAnimation("hand.png");
 }
 
 function setup() {
@@ -106,7 +107,8 @@ function setup() {
   bee2.addAnimation("fly", beeAnim);
   beeAnim.play();
 
-  image(img, 0, 0);
+  hand = createSprite(0, 0);
+  hand.addAnimation("static", handAnim)
 }
 
  function draw() {
