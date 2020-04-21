@@ -17,7 +17,7 @@ let model = null;
 
 const modelParams = {
   flipHorizontal: true, // flip e.g for video  
-  maxNumBoxes: 2, // maximum number of boxes to detect
+  maxNumBoxes: 1, // maximum number of boxes to detect
   iouThreshold: 0.5, // ioU threshold for non-max suppression
   scoreThreshold: 0.6, // confidence threshold for predictions.
 }
@@ -107,7 +107,7 @@ function setup() {
   bee2.addAnimation("fly", beeAnim);
   beeAnim.play();
 
-  hand = createSprite(mouseX, mouseY);
+  hand = createSprite(h1x, h1y);
   hand.addAnimation("static", handAnim);
 }
 
