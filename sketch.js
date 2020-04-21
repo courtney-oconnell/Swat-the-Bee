@@ -90,7 +90,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   //map(windowWidth, 0, 640, 0, windowWidth);
   //map(windowHeight, 0, 480, 0, windowHeight);
-  map(h1x, 0, 640, 0, windowWidth);
+  let c = map(h1x, 0, 640, 0, windowWidth);
 
 
   for (var i = 0; i < 20; i++) { 
@@ -123,7 +123,7 @@ function setup() {
     drawSprites();
 
     fill("red");
-    rect(h1x, h1y, 10, 10);
+    rect(c, h1y, 10, 10);
 }
 
 function backs() {
