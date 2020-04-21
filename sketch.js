@@ -88,7 +88,10 @@ function preload() {
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  map(windowWidth, 640, 480, windowWidth, windowHeight);
+  //map(windowWidth, 0, 640, 0, windowWidth);
+  //map(windowHeight, 0, 480, 0, windowHeight);
+  map(h1x, 0, 640, 0, width);
+
 
   for (var i = 0; i < 20; i++) { 
     clouds[i] = new cloud(); 
