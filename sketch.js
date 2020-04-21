@@ -95,20 +95,20 @@ function setup() {
     clouds[i] = new cloud(); 
   }
 
-  bee = createSprite(random(20, (windowWidth-10)), random(20, (windowHeight-10)));
+  bee = createSprite(random(20, (windowWidth-20)), random(20, (windowHeight-20)));
   bee.addAnimation("fly", beeAnim);
   beeAnim.play();
 
-  bee1 = createSprite(random(20, (windowWidth-10)), random(20, (windowHeight-10)));
+  bee1 = createSprite(random(20, (windowWidth-20)), random(20, (windowHeight-20)));
   bee1.addAnimation("fly", beeAnim);
   beeAnim.play();
 
-  bee2 = createSprite(random(20, (windowWidth-10)), random(20, (windowHeight-10)));
+  bee2 = createSprite(random(20, (windowWidth-20)), random(20, (windowHeight-20)));
   bee2.addAnimation("fly", beeAnim);
   beeAnim.play();
 
   hand = createSprite(0, 0);
-  hand.addAnimation("static", handAnim)
+  hand.addAnimation("static", handAnim);
 }
 
  function draw() {
