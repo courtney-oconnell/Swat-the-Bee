@@ -107,7 +107,7 @@ function setup() {
   bee2.addAnimation("fly", beeAnim);
   beeAnim.play();
 
-  hand = createSprite(0, 0);
+  hand = createSprite(100, 100);
   hand.addAnimation("static", handAnim);
 }
 
