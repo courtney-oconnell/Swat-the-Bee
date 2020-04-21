@@ -7,6 +7,6 @@ canvas {
 }
 
 /* hide video display */
-/*#canvas { display: none; }*/
+#canvas { display: none; }
 
 .videobox { display:none; }
