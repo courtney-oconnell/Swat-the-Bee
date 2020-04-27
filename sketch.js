@@ -89,9 +89,9 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   //map(windowWidth, 0, 640, 0, windowWidth);
   //map(windowHeight, 0, 480, 0, windowHeight);
-  map(h1x, 0, 640, 0, windowWidth);
-  map(h1y, 0, 480, 0, windowHeight);
-
+  let newx = map(h1x, 0, 640, 0, windowWidth);
+  createCanvas(newx, windowHeight);
+  
   for (var i = 0; i < 20; i++) { 
     clouds[i] = new cloud(); 
   }
