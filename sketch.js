@@ -89,7 +89,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   //map(windowWidth, 0, 640, 0, windowWidth);
   //map(windowHeight, 0, 480, 0, windowHeight);
-  map(h1x, 0, 640, 0, windowWidth);
+  map(model, 0, 640, 0, windowWidth);
 
 
   for (var i = 0; i < 20; i++) { 
