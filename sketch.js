@@ -86,7 +86,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(640, 580);
+  createCanvas(640, 480);
   //map(windowWidth, 0, 640, 0, windowWidth);
   //map(windowHeight, 0, 480, 0, windowHeight);
 
@@ -94,15 +94,15 @@ function setup() {
     clouds[i] = new cloud(); 
   }
 
-  bee = createSprite(random(20, 620)), random(20, 460);
+  bee = createSprite(random(20, 620)), random(20, 460));
   bee.addAnimation("fly", beeAnim);
   beeAnim.play();
 
-  bee1 = createSprite(random(20, 620), random(20, 460);
+  bee1 = createSprite(random(20, 620), random(20, 460));
   bee1.addAnimation("fly", beeAnim);
   beeAnim.play();
 
-  bee2 = createSprite(random(20, 620, random(20, 460);
+  bee2 = createSprite(random(20, 620), random(20, 460));
   bee2.addAnimation("fly", beeAnim);
   beeAnim.play();
 }
@@ -132,7 +132,7 @@ function backs() {
     //green grass
     fill('#2FC969')
     grassHeight =  480- (.5 * 480);
-    rect(0, 500, 480, grassHeight);
+    rect(0, 0, 480, grassHeight);
 }
 
 function cloud(){
