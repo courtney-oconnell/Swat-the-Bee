@@ -133,7 +133,13 @@ function setup() {
 }
 
 function bye(spriteA, spriteB) {
+  var x = random(30, 610);
+  var y = random(30, 450);
+
   spriteA.remove();
+  spriteA= createSprite(x, y);
+  spriteA.addAnimation("fly", beeAnim);
+  spriteA.play();
 }
 
 function backs() {
