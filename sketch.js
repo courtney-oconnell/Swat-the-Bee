@@ -128,7 +128,11 @@ function setup() {
       clouds[i].display();
     }
 
-    drawSprites();
+  for (var i = 0; i < bees.length; i++) {
+      bees[i].move();
+      bees[i].display();
+    }
+    //drawSprites();
 
     fill("red");
     rect(h1x, h1y, 10, 10);
