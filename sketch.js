@@ -129,9 +129,6 @@ function setup() {
     }
 
     drawSprites();
-    bee.displace(bee1, bye);
-    bee.displace(bee2, bye);
-    bee1.displace(bee2, bye);
 
     fill("red");
     rect(h1x, h1y, 10, 10);
@@ -171,6 +168,15 @@ function bees(){
     bee = createSprite(x1, y1);
     bee.addAnimation("fly", beeAnim);
     beeAnim.play();
+  }
+
+    this.move = function() {
+    this.x = this.x += 1 ;
+    this.y = this.y + random(-1, 1);
+    
+    if(this.x >= windowWidth){
+      this.x = 0;
+    }
   }
 }
 
