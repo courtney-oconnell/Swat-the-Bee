@@ -100,11 +100,15 @@ function setup() {
   bee.addAnimation("fly", beeAnim);
   beeAnim.play();
 
-  bee1 = createSprite(random(30, 610), random(30, 450));
+  var x2 = random(30, 610);
+  var y2 = random(30, 450);
+  bee1 = createSprite(x2, y2);
   bee1.addAnimation("fly", beeAnim);
   beeAnim.play();
 
-  bee2 = createSprite(random(30, 610), random(30, 450));
+  var x3 = random(30, 610);
+  var y3 = random(30, 450);
+  bee2 = createSprite(x3, y3);
   bee2.addAnimation("fly", beeAnim);
   beeAnim.play();
 }
