@@ -124,9 +124,16 @@ function setup() {
     }
 
     drawSprites();
+    bee.displace(bee1, remove);
+    bee.displace(bee2, remove);
+    bee2.displace(bee3, remove)
 
     fill("red");
     rect(h1x, h1y, 10, 10);
+}
+
+function remove(spriteA, spriteB) {
+  spriteA.remove();
 }
 
 function backs() {
