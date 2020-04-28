@@ -172,7 +172,7 @@ function bees(){
     bee = createSprite(x1, y1);
     bee.addAnimation("fly", beeAnim);
     beeAnim.play();
-    drawSprite();
+    drawSprites();
   }
 
     this.move = function() {
