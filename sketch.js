@@ -1,8 +1,9 @@
 var clouds = [];
-var bee;
+var bugs = [];
+//var bee;
 var beeAnim;
 var bee1;
-var bee1;
+var bee2;
 
 const video = document.getElementById("myvideo");
 const canvas = document.getElementById("canvas");
@@ -94,23 +95,27 @@ function setup() {
     clouds[i] = new cloud(); 
   }
 
-  var x1 = random(30, 610);
-  var y1 = random(30, 450);
-  bee = createSprite(x1, y1);
-  bee.addAnimation("fly", beeAnim);
-  beeAnim.play();
+  for(var i = 0; i < 3; i++){
+    bugs[i] = new bees;
+  }
 
-  var x2 = random(30, 610);
-  var y2 = random(30, 450);
-  bee1 = createSprite(x2, y2);
-  bee1.addAnimation("fly", beeAnim);
-  beeAnim.play();
+  //var x1 = random(30, 610);
+  //var y1 = random(30, 450);
+  //bee = createSprite(x1, y1);
+  //bee.addAnimation("fly", beeAnim);
+  //beeAnim.play();
 
-  var x3 = random(30, 610);
-  var y3 = random(30, 450);
-  bee2 = createSprite(x3, y3);
-  bee2.addAnimation("fly", beeAnim);
-  beeAnim.play();
+  //var x2 = random(30, 610);
+  //var y2 = random(30, 450);
+  //bee1 = createSprite(x2, y2);
+  //bee1.addAnimation("fly", beeAnim);
+  //beeAnim.play();
+
+  //var x3 = random(30, 610);
+  //var y3 = random(30, 450);
+  //bee2 = createSprite(x3, y3);
+  //bee2.addAnimation("fly", beeAnim);
+  //beeAnim.play();
 }
 
  function draw() {
@@ -130,6 +135,8 @@ function setup() {
 
     fill("red");
     rect(h1x, h1y, 10, 10);
+
+    
 }
 
 function bye(spriteA, spriteB) {
@@ -152,6 +159,19 @@ function backs() {
     fill('#2FC969')
     //grassHeight =  480 - (.5 * 480);
     rect(0, 0, 640, -220); 
+}
+
+function bees(){
+  var bee;
+
+  this.x = random(30, 610);
+  this.y = random(30, 450);
+
+  this.display = function() {
+    bee = createSprite(x1, y1);
+    bee.addAnimation("fly", beeAnim);
+    beeAnim.play();
+  }
 }
 
 function cloud(){
