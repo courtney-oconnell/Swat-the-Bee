@@ -124,15 +124,15 @@ function setup() {
     }
 
     drawSprites();
-    bee.displace(bee1, remove);
-    bee.displace(bee2, remove);
-    bee2.displace(bee3, remove)
+    bee.displace(bee1, bye);
+    bee.displace(bee2, bye);
+    bee2.displace(bee3, bye);
 
     fill("red");
     rect(h1x, h1y, 10, 10);
 }
 
-function remove(spriteA, spriteB) {
+function bye(spriteA, spriteB) {
   spriteA.remove();
 }
 
