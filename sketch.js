@@ -127,9 +127,7 @@ function setup() {
     drawSprites();
 
     fill("red");
-    rect(h1x, h1y, 10, 10);
-
-    
+    var hand = rect(h1x, h1y, 10, 10);   
 }
 
 function bye(spriteA, spriteB) {
