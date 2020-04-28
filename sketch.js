@@ -132,7 +132,7 @@ function setup() {
       bees[i].move();
       bees[i].display();
     }
-    //drawSprites();
+    drawSprites();
 
     fill("red");
     rect(h1x, h1y, 10, 10);
@@ -172,7 +172,7 @@ function bees(){
     bee = createSprite(x1, y1);
     bee.addAnimation("fly", beeAnim);
     beeAnim.play();
-    drawSprites();
+    //drawSprites();
   }
 
     this.move = function() {
