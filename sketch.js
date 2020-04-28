@@ -126,7 +126,7 @@ function setup() {
     drawSprites();
     bee.displace(bee1, bye);
     bee.displace(bee2, bye);
-    bee2.displace(bee3, bye);
+    bee1.displace(bee2, bye);
 
     fill("red");
     rect(h1x, h1y, 10, 10);
