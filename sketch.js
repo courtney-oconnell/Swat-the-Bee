@@ -132,7 +132,7 @@ function backs() {
     //green grass
     fill('#2FC969')
     grassHeight =  480 - (.5 * 480);
-    rect(0, 0, 640, -grassHeight);
+    rect(0, 0, 640, 240);
 }
 
 function cloud(){
