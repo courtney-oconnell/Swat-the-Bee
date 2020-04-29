@@ -111,6 +111,7 @@ function setup() {
     ellipse(0, 0, 100+this.getSpeed(), 100-this.getSpeed());
     pop();
     }
+  hand.maxSpeed = 10;
 
   var x1 = random(30, 610);
   var y1 = random(30, 450);
