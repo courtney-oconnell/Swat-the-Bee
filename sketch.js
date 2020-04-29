@@ -162,9 +162,9 @@ function bye(spriteA, spriteB) {
   var y = random(30, 450);
 
   spriteA.remove();
-  spriteA= createSprite(x, y);
-  spriteA.addAnimation("fly", beeAnim);
-  spriteA.play();
+  //spriteA= createSprite(x, y);
+  //spriteA.addAnimation("fly", beeAnim);
+  //spriteA.play();
 }
 
 function backs() {
