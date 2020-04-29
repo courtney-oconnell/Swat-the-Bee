@@ -135,7 +135,7 @@ function setup() {
     hand.collide(bee2, bye);
 }
 
-function bye(spriteA, spriteB) {
+function bye(spriteA, spriteB) { 
   var x = random(30, 610);
   var y = random(30, 450);
 
