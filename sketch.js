@@ -128,6 +128,36 @@ function setup() {
 
     fill("red");
     var hand = rect(h1x, h1y, 10, 10);   
+
+    if (hand.overlap(bee)) 
+    {
+      var x = random(30, 610);
+      var y = random(30, 450);
+
+      bee.remove();
+      bee= createSprite(x, y);
+      bee.addAnimation("fly", beeAnim);
+      bee.play();
+    }
+    else if (hand.overlap(bee1))
+    {
+      var x = random(30, 610);
+      var y = random(30, 450);
+
+      bee1.remove();
+      bee1= createSprite(x, y);
+      bee1.addAnimation("fly", beeAnim);
+      bee1.play();
+    }
+    else if (hand.overlap(bee2)) {      
+      var x = random(30, 610);
+      var y = random(30, 450);
+
+      bee2.remove();
+      bee2= createSprite(x, y);
+      bee2.addAnimation("fly", beeAnim);
+      bee2.play();
+    };
 }
 
 function bye(spriteA, spriteB) {
