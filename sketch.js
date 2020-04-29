@@ -127,8 +127,8 @@ function setup() {
     drawSprites();
 
     fill("red");
-    var hand = rect(h1x, h1y, 10, 10);   
-    hand = createSprite(h1x, h1y);
+    //var hand = rect(h1x, h1y, 10, 10);   
+    var hand = createSprite(h1x, h1y);
 
     hand.collide(bee, bye);
     hand.collide(bee1, bye);
