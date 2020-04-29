@@ -98,7 +98,7 @@ function setup() {
 
   hand = createSprite(0, 0, 2, 2);
 
-  hand.draw = function() {
+  hand.draw = function() { 
 
     //the center of the sprite will be point 0,0
     //"this" in this function will reference the sprite itself
@@ -143,8 +143,8 @@ function setup() {
     }
 
     //hand trailer, the speed is inversely proportional to the hand distance
-    hand.velocity.x = (mouseX-hand.position.x)/10;
-    hand.velocity.y = (mouseY-hand.position.y)/10;
+    hand.velocity.x = (h1x-hand.position.x)/10;
+    hand.velocity.y = (h1y-hand.position.y)/10;
     
     drawSprites();
     //hand.draw = function() { ellipse(0,0,10,10) } 
