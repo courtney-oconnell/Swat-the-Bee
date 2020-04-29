@@ -1,6 +1,6 @@
 var clouds = [];
 var bugs = [];
-//var bee;
+var bee;
 var beeAnim;
 var bee1;
 var bee2;
@@ -95,13 +95,14 @@ function setup() {
   for (var i = 0; i < 20; i++) { 
     clouds[i] = new cloud(); 
   }
-  hand = createSprite(400, 200, 10, 10);
+
+  hand = createSprite(h1x, h1y, 10, 10);
 
   hand.draw = function() {
 
     //the center of the sprite will be point 0,0
     //"this" in this function will reference the sprite itself
-    fill(237, 205, 0);
+    fill("red");
 
     //make the ellipse stretch in the sprite direction
     //proportionally to its speed
@@ -109,7 +110,7 @@ function setup() {
     rotate(radians(this.getDirection()));
     ellipse(0, 0, 100+this.getSpeed(), 100-this.getSpeed());
     pop();
-  };
+    }
 
   var x1 = random(30, 610);
   var y1 = random(30, 450);
@@ -140,12 +141,11 @@ function setup() {
       clouds[i].display();
     }
 
-    fill("red");
-    //mouse trailer, the speed is inversely proportional to the mouse distance
+    //hand trailer, the speed is inversely proportional to the hand distance
     hand.velocity.x = (h1x-hand.position.x)/10;
     hand.velocity.y = (h1y-hand.position.y)/10;
     
-     drawSprites();
+    drawSprites();
     //hand.draw = function() { ellipse(0,0,10,10) } 
 
     //rect(h1x, h1y, 10, 10);   
