@@ -127,7 +127,8 @@ function setup() {
     drawSprites();
 
     fill("red");
-    var hand = rect(h1x, h1y, 10, 10);   
+    sprite.draw = function() { ellipse(0,0,10,10) } 
+    //rect(h1x, h1y, 10, 10);   
     //var hand = createSprite(h1x, h1y);
 
     hand.collide(bee, bye);
