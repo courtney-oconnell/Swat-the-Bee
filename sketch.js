@@ -143,8 +143,8 @@ function setup() {
     }
 
     //hand trailer, the speed is inversely proportional to the hand distance
-    hand.velocity.x = (h1x-hand.position.x)/10;
-    hand.velocity.y = (h1y-hand.position.y)/10;
+    hand.velocity.x = (mouseX-hand.position.x)/10;
+    hand.velocity.y = (mouseY-hand.position.y)/10;
     
     drawSprites();
     //hand.draw = function() { ellipse(0,0,10,10) } 
@@ -152,9 +152,9 @@ function setup() {
     //rect(h1x, h1y, 10, 10);   
     //var hand = createSprite(h1x, h1y);
 
-    //hand.collide(bee, bye);
-    //hand.collide(bee1, bye);
-    //hand.collide(bee2, bye);
+    hand.collide(bee, bye);
+    hand.collide(bee1, bye);
+    hand.collide(bee2, bye);
 }
 
 function bye(spriteA, spriteB) { 
