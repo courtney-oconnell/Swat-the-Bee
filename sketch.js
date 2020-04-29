@@ -4,6 +4,7 @@ var bugs = [];
 var beeAnim;
 var bee1;
 var bee2;
+var hand;
 
 const video = document.getElementById("myvideo");
 const canvas = document.getElementById("canvas");
@@ -127,7 +128,6 @@ function setup() {
     drawSprites();
 
     fill("red");
-    var hand;
     hand.draw = function() { ellipse(0,0,10,10) } 
     //rect(h1x, h1y, 10, 10);   
     //var hand = createSprite(h1x, h1y);
