@@ -96,7 +96,7 @@ function setup() {
     clouds[i] = new cloud(); 
   }
 
-  hand = createSprite(h1x, h1y, 10, 10);
+  hand = createSprite(0, 0, 10, 10);
 
   hand.draw = function() {
 
