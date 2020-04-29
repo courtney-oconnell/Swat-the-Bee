@@ -152,9 +152,9 @@ function setup() {
     //rect(h1x, h1y, 10, 10);   
     //var hand = createSprite(h1x, h1y);
 
-    //hand.collide(bee, bye);
-    //hand.collide(bee1, bye);
-    //hand.collide(bee2, bye);
+    hand.collide(bee, bye);
+    hand.collide(bee1, bye);
+    hand.collide(bee2, bye);
 }
 
 function bye(spriteA, spriteB) { 
